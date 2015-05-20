@@ -37,17 +37,17 @@
 	</b>
 </pre></p>
 <p><canvas id="myCanvas" width="500" height="500" style="border:1px solid #000000;">
-<script>
-	var draw = function() {
-    if(mouseIsPressed) {
-        noStroke();
-        fill(16, 8, 245);
-    ellipse(mouseX, mouseY, 20, 20);
-    }
-};
-
-</script>
-</canvas>
+<P align="center"><img src="images/canvas/mouse_event.gif" alt="Javascript code to detect a mouse event on a HTML5 canvas"></P>
+<P>The BODY tag calls an onLoad function. Inside of this function we have this:</P>
+<P class="indent_big">var canvas = document.getElementById(&quot;canvas_1&quot;);<br>
+  canvas.addEventListener(&quot;mousedown&quot;, doMouseDown, false);</P>
+<P>So we get a reference to the canvas tag then add a <b>mousedown</b> event listener. 
+  This event calls a function with the name of doMouseDown. (Instead of detecting 
+  mousedown, you can replace it with other mouse events like mousemove and mouseup.)</P>
+<P>The pageX and pageY properties are used to get the X and Y coordinates of the 
+  mouse when a user left clicks on the canvas. These coordinates are then displayed 
+  in an alert box.</P>
+  <P align="center"><script type="text/javascript">
 	<img src="http://vector-magz.com/wp-content/uploads/2013/11/construction-signs-clip-art1.png" height="100" width="100">
 </p>
 </pre>
