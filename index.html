@@ -8,6 +8,38 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
   <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
  
+ <style>
+		/*
+		* drawingboards styles: set the board dimensions you want with CSS
+		*/
+
+		.board {
+			margin: 0 auto;
+			width: 300px;
+			height: 300px;
+		}
+
+		#default-board {
+			width: 700px;
+			height: 400px;
+		}
+
+		#custom-board-2 {
+			width: 550px;
+			height: 300px;
+		}
+
+		#title-board {
+			width: 600px;
+			height: 270px;
+		}
+		/* custom board styles for the title? no problem*/
+		#title-board .drawing-board-canvas-wrapper {
+			border: none;
+			margin: 0;
+		}
+		</style>
+ 
 <body background="http://content.wallpapers-room.com/resolutions/1920x1200/s/Wallpapers-room_com___simple_wall_glass_by_lassekongo83_1920x1200.jpg">
 <nav class="navbar navbar-default">
   <div class="container-fluid">
@@ -37,12 +69,6 @@
 	</b>
 </pre></p>
 <p>
-	<script>
- #default-board {
-			width: 700px;
-			height: 400px;
-		}
-</script>
 <div class="board" id="default-board"></div>
 	<img src="http://vector-magz.com/wp-content/uploads/2013/11/construction-signs-clip-art1.png" height="100" width="100">
 </p>
