@@ -38,11 +38,25 @@
 </pre></p>
 <p>
 	<script>
-  $(document).ready(function() {
-    $('.literally.index').literallycanvas({
-      backgroundColor: 'whiteSmoke'
-    });
-  });
+  var myBoard = new DrawingBoard.Board('zbeubeu');
+
+//listen to an event
+myBoard.ev.bind('board:reset', why);
+
+//stop listening to it
+myBoard.ev.unbind('board:reset', why);
+
+function why() {
+    alert('OH GOD WHY');
+}
+
+//you can also trigger new events
+myBoard.ev.trigger('readme:example', 'what', 'up');
+
+//and listen to them
+myBoard.ev.bind('readme:example', function(one, two) {
+    console.log(one, two); // 'what', 'up'
+});
 </script>
 	<img src="http://vector-magz.com/wp-content/uploads/2013/11/construction-signs-clip-art1.png" height="100" width="100">
 </p>
